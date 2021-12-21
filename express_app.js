@@ -26,7 +26,7 @@ server.delete('/todos/:id', todoController.deleteTodoById);
 
 server.listen(PORT, function(){
     console.log('Server has started to run in express');
-    mongoose.connect(process.env.LOCAL_URL)
+    mongoose.connect(process.env.ATLAS_URL)
     .then(function(){
         console.log('DB is connected');
 
